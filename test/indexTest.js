@@ -1,3 +1,4 @@
+const { getModulesPluginNames } = require('@babel/preset-env');
 const sinon = require( 'sinon' )
 
 describe( 'index.js', () => {
@@ -5,6 +6,7 @@ describe( 'index.js', () => {
 
   beforeEach( () => {
     spy = sinon.spy( console, 'log' );
+
   } );
 
   afterEach( () => {
